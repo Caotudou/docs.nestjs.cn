@@ -1,0 +1,8 @@
+version: '3'
+services:
+  docs-nestjs:
+    image: registry.cn-hangzhou.aliyuncs.com/my-own-space/docs.nestjs.cn:latest
+    container_name: docs-nestjs
+    restart: always
+    ports:
+      - "4000:4000"
