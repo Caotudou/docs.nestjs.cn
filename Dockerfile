@@ -4,9 +4,9 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY ./ /app
 RUN ls
-RUN npm install -g yarn --force
-RUN yarn
-RUN yarn global add pm2
+RUN npm install -g pnpm --force
+RUN pnpm install
+RUN pnpm install -g pm2
 
 
 EXPOSE 4000
